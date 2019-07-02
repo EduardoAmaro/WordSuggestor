@@ -39,20 +39,17 @@ public class Tri {
         return sugs.subList(0, Math.min(max, sugs.size()));
     }
 
-    public void loadFromFile(File f) {
-        try {
-            System.out.println(f.length());
-            Scanner sc = new Scanner(new BufferedReader(new InputStreamReader(new FileInputStream(f), StandardCharsets.UTF_8)));
-            int total = 0;
-            while (sc.hasNextLine()) {
-                String line = sc.nextLine();
-                addWord(line);
-                total++;
-            }
-            System.out.println("Li " + total);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+    public void loadFromStream(InputStream stream) {
+
+        Scanner sc = new Scanner(new BufferedReader(new InputStreamReader(stream)));
+        int total = 0;
+        while (sc.hasNextLine()) {
+            String line = sc.nextLine();
+            addWord(line);
+            total++;
         }
+        System.out.println("Li " + total);
+
     }
 
     public void resetWeights() {
