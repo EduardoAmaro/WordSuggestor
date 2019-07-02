@@ -1,4 +1,4 @@
-# Trabalho final Algoritmos e Estrutura de Dados II
+# Trabalho final de Algoritmos e Estrutura de Dados II
 
 
 Feito a implementação de um sugestor de palavras, usando árvores trie para localizar palavras com o mesmo inicio.
@@ -10,7 +10,7 @@ Guilherme Tomaschewski Netto
 
 ## Grupo
  - Carlos André Feldmann Júnior (https://feldman.dev)
- - Eduardo Amaro Da Rosa(https://github.com/EduardoAmaro)
+ - Eduardo Amaro Da Rosa (https://github.com/EduardoAmaro)
  
 ### Linguagem Utilizada
 Programa implemento utilizando Java 8 com Maven para construção.
